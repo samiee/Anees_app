@@ -1,0 +1,29 @@
+## story_01
+	* greet
+ 		- utter_greet
+	* findTherapistsByCity
+		- utter_coming_soon
+	* bye
+ 		- utter_bye
+
+## story_02
+	* greet
+		- utter_ask_how_can_i_help
+	* findTherapistsByCity
+		- utter_findTherapistsByCity
+		- utter_bye
+## story_03
+	* greet
+		- utter_greet
+	* findTherapistsByCity
+		- utter_coming_soon
+	* bye
+		-utter_bye
+## story_04
+	* findTherapistsByCity
+		- utter_greet
+		- utter_ask_how_can_i_help
+	* affirmative
+		- utter_happy
+	* bye
+		- utter_findTherapistsByCity

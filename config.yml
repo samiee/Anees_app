@@ -1,0 +1,29 @@
+#  Configuration for Rasa NLU.
+#  https://rasa.com/docs/nlu/components/
+# language: en
+# pipeline: tensorflow_embedding
+
+#  Configuration for Rasa Core.
+#  https://rasa.com/docs/core/policies
+# policies:
+#   - name: MemoizationPolicy
+#   - name: KerasPolicy
+
+language: ar
+pipeline:
+- name: WhitespaceTokenizer
+- name: CountVectorsFeaturizer
+- intent_split_symbol: +
+  intent_tokenization_flag: true
+  name: EmbeddingIntentClassifier
+policies:
+- batch_size: 50
+  epochs: 200
+  max_training_samples: 300
+  name: KerasPolicy
+- fallback_action_name: action_default_fallback
+  name: FallbackPolicy
+- max_history: 5
+  name: MemoizationPolicy
+- name: FormPolicy
+- name: MappingPolicy

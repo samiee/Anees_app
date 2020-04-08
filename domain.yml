@@ -1,0 +1,30 @@
+intents:
+  - greet
+  - bye
+  - affirmative
+  - findTherapistsByCity
+  - negative
+
+actions:
+  - utter_greet
+  - utter_ask_how_can_i_help
+  - utter_happy
+  - utter_bye
+  - utter_coming_soon
+  - utter_findTherapistsByCity
+
+templates:
+  utter_greet:
+  - text: "اهلاً وسهلاً .. انا انيس 🤖 راح اساعدك في ايجاد معالجك الشخصي "
+
+  utter_ask_how_can_i_help:
+  - text: "كيف ممكن اساعدك عزيزي"
+  utter_findTherapistsByCity:
+    - text: "سوف نتمكن من خدمتك قريبا إن شاء الله"
+  utter_happy:
+  - text: "جميل!"
+
+  utter_goodbye:
+  - text: "في حفظ الله .."
+  utter_coming_soon:
+  - text: "اتشرف بخدمتك .. انتظرنا قريباً"
